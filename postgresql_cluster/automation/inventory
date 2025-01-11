@@ -66,5 +66,5 @@ ansible_ssh_private_key_file='~/.ssh/mts'
 #ansible_python_interpreter='/usr/bin/python3'
 
 [pgbackrest:vars]
-ansible_user='postgres'
-ansible_ssh_pass='secretpassword'
+# ansible_user='postgres'
+# ansible_ssh_pass='secretpassword'
