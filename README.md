@@ -8,7 +8,7 @@
 
 Ansible playbook:
 ```bash
-cd postgresql_cluster
+cd postgresql_cluster/automation
 ansible-playbook deploy_pgcluster.yml
 ```
 
