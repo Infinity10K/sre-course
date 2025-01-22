@@ -53,6 +53,11 @@
     src: prometheus.conf.j2
     dest: /etc/prometheus/prometheus.conf
 
+- name: Copy rules file
+  template:
+    src: rules.yml.j2
+    dest: /etc/prometheus/rules.yml
+
 - name: Copy systemd init file
   template:
     src: init.service.j2

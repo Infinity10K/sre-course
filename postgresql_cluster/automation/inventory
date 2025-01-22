@@ -34,11 +34,11 @@
 
 # PostgreSQL nodes
 [master]
-192.168.1.30 ansible_ssh_host=176.109.82.213 ansible_ssh_port=25023
+192.168.1.30 ansible_ssh_host=176.109.82.213 ansible_ssh_port=25023 postgresql_exists=false
 #10.128.64.140 hostname=pgnode01 postgresql_exists=false # patroni_tags="datacenter=dc1"
 
 [replica]
-192.168.1.31 ansible_ssh_host=176.109.82.213 ansible_ssh_port=25024
+192.168.1.31 ansible_ssh_host=176.109.82.213 ansible_ssh_port=25024 postgresql_exists=false
 #10.128.64.142 hostname=pgnode02 postgresql_exists=false # patroni_tags="datacenter=dc1"
 #10.128.64.143 hostname=pgnode03 postgresql_exists=false # patroni_tags="datacenter=dc1"
 #10.128.64.144 hostname=pgnode04 postgresql_exists=false patroni_tags="datacenter=dc2"

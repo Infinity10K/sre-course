@@ -2,5 +2,10 @@
 serviceName: "prometheus"
 userId: "prometheus"
 groupId: "prometheus"
-exec_command: "/usr/local/bin/prometheus --config.file=/etc/prometheus/prometheus.conf --storage.tsdb.path=/data/prometheus --storage.tsdb.retention=2d"
-version: "2.3.2"
+exec_command: "/usr/local/bin/prometheus --config.file=/etc/prometheus/prometheus.conf \
+--storage.tsdb.path=/data/prometheus \
+--web.console.templates=/etc/prometheus/consoles \
+--web.console.libraries=/etc/prometheus/console_libraries \
+--web.listen-address=0.0.0.0:9090 \
+--web.external-url="
+version: "3.1.0"
